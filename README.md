@@ -1,3 +1,12 @@
+<h1>
+    <img alt="Node API" srx="./assets/nodeAPI.png">
+</h1>
+
+
+# Sobre
+
+=> Utilizando express no node como base para criar um servidor e axios para consumir a API JSON Placeholder no back-end e usando FETCH da API viaCep no front-end.
+
 # Back-end 
 
 => Para o back-end a tecnologia utilizada foi o Node.js, utilizei o express para criar o servidor, 
@@ -20,6 +29,15 @@ capturo o RESPONSE em uma váriavel e depois o armazeno em outra váriavel só q
 
 => Chamo a função showContent com DATA como parâmetro, e na função showContent uso a estrura de repetição WHILE transformo DATA em array e 
 utilizo interpolação para ajudar na apresentação dos dados em tela.
+
+# Tecnologias 
+
+=> Javascript
+=> Node.js
+=> JSON
+=> HTML5
+=> CSS3
+
 
 # Dependências
 
