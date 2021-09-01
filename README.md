@@ -1,5 +1,5 @@
 <h1>
-    <img alt="Node API" srx="./assets/nodeAPI.png">
+    <img alt="Node API" src="./assets/nodeAPI.png">
 </h1>
 
 
