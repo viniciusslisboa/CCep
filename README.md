@@ -1,4 +1,4 @@
-<h1>
+<h1 align="center">
     <img alt="Node API" src="./assets/nodeAPI.png">
 </h1>
 
