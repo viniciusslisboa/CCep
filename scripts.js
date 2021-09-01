@@ -25,12 +25,23 @@ function showContent(data) {
     while (count <= 5) {
         let array = Object.values(data)
         let index = array.indexOf("")
+        let span = document.querySelector(`.spn${count}`)
+
         if (index > -1) {
             array.splice(index, 1)
         }
-        let span = document.querySelector(`.spn${count}`)
+        
+        if(data.erro == true) {
+            span.innerHTML = 'Informação não encontrada'
+            span.style.color = 'red'
+            span.style.backgroundColor = 'white'
+        }
+
         span.innerHTML = array[count]
+        span.style.backgroundColor = 'lightgrey'
+        
         document.querySelector('.spn5').innerHTML = data.ddd
+        
         count ++
     } 
 }
