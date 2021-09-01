@@ -1,6 +1,6 @@
 <h1 align="center">
     <img alt="Node API" src="./assets/nodejs-icon.svg"  width="80px" >
-    <h2>Node API</h2>
+    <h2 align="center">Node API</h2>
 </h1>
 
 
