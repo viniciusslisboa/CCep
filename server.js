@@ -6,7 +6,7 @@ const app = express()
 const port = '2433'
 
 app.use(cors())
-app.use('/', async (req, res) => {
+app.get('/', async (req, res) => {
     const { data } = await axios('https://jsonplaceholder.typicode.com/users')
     
     
