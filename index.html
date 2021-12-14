@@ -8,30 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="./assets/CCeplogo.PNG" type="image/png">
     <script src="./scripts.js" defer></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header class="header">
+        <h1>C<span class="spnLogo">C</span>ep</h1>
+        <ul class="list">
+            <a href="#"><li>Consulta cep</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact Us</li></a>
+        </ul>
+    </header>
     <main>
-        <div class="divh3"><h1>Consulta CEP</h1></div>
+        <div class="welcome">
+            <h2>Bem-vindo ao<h1> C<span class="spnLogo">C</span>ep!</h1></h2>
+            <p>Consulte seu cep de forma prática e fácil.</p>
+        </div>
+        <div class="inptgGroup">
+            <div class="divh3"><h1>Consulta <span class="spnLogo">Cep</span></h1></div>
         
-        <form id="form" action="">
-            <input type="text" class="inputForm" id="inputCep" autocomplete="off">
-            <input type="button" id="buttonSend" value="ENVIAR">
-        </form>
-        <div class="divInfos"> 
-            <span>Logradouro:</span>
-            <span class="spn1 span"></span>
-            <span>Bairro:</span>
-            <span class="spn2 span"></span>
-            <span>Localidade:</span>
-            <span class="spn3 span"></span>
-            <span>UF:</span>
-            <span class="spn4 span "></span>
-            <span>DDD:</span>
-            <span class="spn5 span"></span>
+            <form id="form" action="">
+                <input type="text" class="inputForm" id="inputCep" autocomplete="off">
+                <input type="button" id="buttonSend" value="ENVIAR">
+            </form>
+            <p>O CEP (Código de Endereçamento Postal) é um sistema de códigos que visa racionalizar o processo de encaminhamento e entrega de correspondências através da divisão do país em regiões postais.</p>
         </div>
     </main>
+    <div class="dts show">
+        <div class="dataInfo">
+            <h2>RESUL<span class="spnLogo">T</span>ADOS</h1></h2>
+            <p>Dados abaixo</p>
+        </div>
+        <div class="divInfos"></div>
+    </div>
+    
 </body>
 </html>
