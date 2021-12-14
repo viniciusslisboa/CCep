@@ -7,11 +7,14 @@ form.addEventListener("submit", async (e) => {
         const cep = input.value
         const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
         const data =  await response.json()
+        if(data.erro == true) {
+            alert("Esse cep não é válido. Tente novamente!")
+        } else showContent(data);
         
-        showContent(data)
 
     } catch (error) {
         if (error) {
+            alert("Insira um cep válido!")
             console.log("Bad Request 404 - Digite um cep válido" + error)
         }
     }
@@ -25,11 +28,13 @@ button.addEventListener("click", async (e) => {
         const cep = input.value
         const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
         const data =  await response.json()
-        
-        showContent(data)
+        if(data.erro == true) {
+            alert("Esse cep não é válido. Tente novamente!")
+        } else showContent(data);
 
     } catch (error) {
         if (error) {
+            alert("Insira um cep válido!")
             console.log("Bad Request 404 - Digite um cep válido" + error)
         }
     }

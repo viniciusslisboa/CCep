@@ -147,7 +147,8 @@ header {
 }
 
 .list > a:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
+    color: rgb(74, 255, 231);
 }
 
 .spnLogo {
